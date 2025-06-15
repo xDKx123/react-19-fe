@@ -1,5 +1,6 @@
 const apiSettings = {
-  API_URL: process.env.REACT_APP_API_URL,
+  //API_URL: process.env.PUBLIC_API_URL,
+  API_URL: "http://localhost:8081"
 };
 
 export { apiSettings };

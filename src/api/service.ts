@@ -54,7 +54,7 @@ class ApiService {
 
   private constructUrl = () => {
     return 'http://localhost:3000';
-    return `${process.env.REACT_APP_API_URL}`;
+    // return `${process.env.PUBLIC_API_URL}`;
   };
 
   private handleSuccess = (response: AxiosResponse) => {

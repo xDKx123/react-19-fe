@@ -19,12 +19,14 @@ i18n
       lng: 'sl',
       load: 'currentOnly',
       fallbackLng: ['en', 'sl'],
-      debug: process.env.NODE_ENV === 'development',
+      //debug: process.env.NODE_ENV === 'development',
+      debug: true,
       ns: 'translation',
       interpolation: {
         escapeValue: false,
       },
-      backend: {
+        partialBundledLanguages: true, // ✅ add this
+        backend: {
         loadPath: apiSettings.API_URL + '/static/locales/{{lng}}/{{ns}}.json',
         crossDomain: true,
       },
